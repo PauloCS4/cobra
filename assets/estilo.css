@@ -1,31 +1,28 @@
-/* div{
+div{
     border: black solid 1px;
 }
 
- */
-
 
 .marca{
-    font-size: 2em;
-
-    font-weight: 500;
+    font-family: "Playwrite DK Loopet", cursive;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    color: darkblue;
 }
-
 .slogan{
-    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-/*Fuentes estandar*/
+/*colores fuente estandar*/
 .naranjo{
     color: rgb(196, 128, 3);
 }
 
 .verde{
-    color: darkolivegreen;
+    /* color: rgb(99, 99, 145); */
+    color: rgb(101, 145, 99);
 }
-
-
 
 
 /*Fuentes de gooogle*/
@@ -34,7 +31,7 @@
     font-family: "Cal Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
 .merri{
     font-family: "Merriweather", serif;
@@ -42,23 +39,21 @@
     font-style: normal;
 }
 
-
-
-
-
 .img-logo{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
 
-
+.tema-secundario{
+    text-decoration: none;
+}
 
 
 
 
 @media (min-width: 576px) {
     .img-logo {
-      width: 140px;
-      height: 140px;
+      width: 200px;
+      height: 200px;
     }
 }

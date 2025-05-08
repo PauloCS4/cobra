@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home |  Cobra Audio</title>
+    <title>Home | Cobra Azul</title>
 
     <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstra@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 
     <!-- Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
 
     <!-- Estilo paulo-->
      <link href="./assets/estilo.css" rel="stylesheet">
@@ -21,13 +21,13 @@
     <header class="container-fluid">
 
         <div class="row">
-            <section class="col-4">
-                <img class="img-fluid img-logo" alt="logotipo de la tienda" src="./assets/logos/cb-neutro.png">
+            <section class="col-12 col-md-12 d-flex align-items-center justify-content-center">
+                <div>
+                    <h1 class="marca">Cobra Azul</h1>
+                    <p class="slogan">Instrumentos Musicales</p>
+                </div>
             </section>
-            <section class="col-8 cal-sans">
-                <h1 class="marca">Cobra Audio</h1>
-                <p class="slogan">Instrumentos musicales</p>
-            </section>
+            
         </div>
 
         <!--Nav estilo nav-tabs de bootstrap-->
@@ -36,11 +36,11 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                 </li>
-                <li class=" nav-item">
+                <li class="nav-item">
                     <a class="nav-link inactivo naranjo" href="./pages/tienda.html">Tienda</a>
                 </li>
-                <li class=" nav-item ">
-                    <a class="nav-link inactivo naranjo" href="./pages/soporte.html">Catálogo</a>
+                <li class="nav-item ">
+                    <a class="nav-link inactivo naranjo" href="./pages/catalogo.html">Catálogo</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link inactivo naranjo" href="./pages/contacto.html">Contacto</a>
@@ -52,67 +52,98 @@
     </header>
     <main>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-12   text-center my-4">
-                    <h2 class="display-3 fw-bold verde merri ">
-                        Bienvenido
-                    </h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center my-4">
-                    <p class="mx-auto">
-                        Desata tu pasión con nuestros instrumentos musicales hechos a mano, inspirados en los modelos clásicos que hicieron historia.
-                        Cada bajo y guitarra es una obra maestra, creada con precisión y pasión.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="my-4 p-0">
-                    <img class="img-fluid" src="./assets/images/estudio-casero.png" alt="Cliente probando guitarra enchufada">
-                </div>
-            </div>
 
             <div class="row">
-                <div class="text-center my-4">
-                    <h2 class="display-3 fw-bold verde merri">
-                        Ofertas del mes
-                    </h2>
-                    <p class="text-muted">Las ultimas oportunidades.</p> 
+
+            <section class="col-md-6 section-presentacion">
+
+                <div class="row">
+                    <div class="col-12   text-center my-4">
+                        <h2 class="display-3 fw-bold verde merri ">
+                            Bienvenido
+                        </h2>
+                    </div>
                 </div>
-            </div>
+
+
+
+                <div class="col-12  text-center">
+                    <img class="img-fluid img-logo" alt="logotipo de la tienda" src="./assets/logos/cobra2.jpg">
+                </div>
+
+                <div class="row">
+                    <div class="col-12 text-center my-4">
+                        <p class="mx-auto">
+                            Desata tu pasión con nuestros instrumentos musicales hechos a mano, inspirados en los modelos clásicos que hicieron historia.
+                            Cada bajo y guitarra es una obra maestra, creada con precisión y pasión.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="my-4 ">
+                        <img class="img-fluid" src="./assets/images/estudio-casero.png" alt="Cliente probando guitarra">
+                    </div>
+                </div>
             
-            <div class="row">
-                <div class="text-center my-4">
-                    <h2 class="display-3 fw-bold verde merri">
-                        Home Studio
-                    </h2>
-                    <p class="text-muted">
-                        Lo que necesitas está aquí.
-                    </p> 
-                </div>
-            </div>
+            </section>
 
-            <div class="row">
-                <div class="text-center my-4">
-                    <h2 class="display-3 fw-bold verde merri">
-                        Destacados
-                    </h2>
-                    <p class="text-muted">
-                        Los productos más vendidos
-                    </p> 
-                </div>
-            </div>
+            <section class="col-md-6 section-promocional">
 
-            <div class="row">
-                <div class="text-center my-4">
-                    <h2 class="display-3 fw-bold verde merri">
-                        Embajadores
-                    </h2>
-                    <p class="text-muted">
-                        Artistas que usan instrumentos Cobra
-                    </p> 
+
+                <div class="row">
+                    <div class="text-center my-4">
+                        <a class="tema-secundario" href="#">
+                            <h3 class="display-3 fw-bold verde merri">
+                            Ofertas del mes
+                            </h3>
+                            <p class="text-muted">
+                                Las mejores oportunidades.
+                            </p> 
+                        </a>
+                    </div>
                 </div>
+
+                <div class="row">
+                    <div class="text-center my-4">
+                        <a class="tema-secundario" href="#">
+                            <h3 class="display-3 fw-bold verde merri">
+                                Home Studio
+                            </h3>
+                            <p class="text-muted">
+                                Lo que necesitas está aquí.
+                            </p> 
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="text-center my-4">
+                        <a class="tema-secundario" href="#">
+                            <h3 class="display-3 fw-bold verde merri">
+                                Destacados
+                            </h3>
+                            <p class="text-muted">
+                                Los productos más vendidos
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="text-center my-4">
+                        <a class="tema-secundario" href="#">
+                            <h3 class="display-3 fw-bold verde merri">
+                            Embajadores
+                            </h3>
+                            <p class="text-muted">
+                            Artistas usando instrumentos Cobra
+                            </p> 
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+
             </div>
 
         </div>
