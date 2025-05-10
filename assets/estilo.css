@@ -2,8 +2,24 @@
     border: black solid 1px;
 } */
 
+.contenedor-grid-catalogo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
 
-.contenedor-tienda{
+    grid-template-areas: "titulo titulo"
+                         "categoria categoria"
+                         "producto producto";
+
+    gap: 0;
+    grid-row-gap: 10px;
+
+    
+
+}
+
+
+.contenedor-seccion{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -11,7 +27,6 @@
 }
 
 .titulo-seccion{
-
 
     font-size: 2.5rem; /* Tamaño similar a display-3 */
     font-weight: bold; /* Equivalente a fw-bold */
