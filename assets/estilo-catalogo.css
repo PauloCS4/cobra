@@ -1,5 +1,22 @@
 /* Estilos del catalogo*/
 
+.marca{
+    font-family: "Playwrite DK Loopet", cursive;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    color: darkblue;
+}
+.slogan{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*colores fuente estandar*/
+.naranjo{
+    color: rgb(196, 128, 3);
+}
+
+
 .contenedor-seccion{
     display: flex;
     flex-direction: column;

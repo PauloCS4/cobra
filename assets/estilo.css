@@ -2,21 +2,6 @@
     border: black solid 1px;
 } */
 
-.contenedor-grid-catalogo{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
-
-    grid-template-areas: "titulo titulo"
-                         "categoria categoria"
-                         "producto producto";
-
-    gap: 0;
-    grid-row-gap: 10px;
-
-    
-
-}
 
 
 .contenedor-seccion{
