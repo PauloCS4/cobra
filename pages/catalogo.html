@@ -1,87 +1,151 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo | Cobra Azul</title>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Catálogo | Cobra Azul</title>
 
-    <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 
-    <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
 
-    <!-- Estilo paulo-->
-     <link href="../assets/estilo-catalogo.css" rel="stylesheet">
+        <!-- Estilo paulo-->
+        <link href="../assets/estilo-catalogo.css" rel="stylesheet">
 
-</head>
-<body>
-    <header class="container-fluid">
+    </head>
+    <body>
+        <header class="container">
 
-        <div class="row">
-
-            <section class="col-12 col-md-12 d-flex align-items-center justify-content-center">
-                <div>
-                    <h1 class="marca">Cobra Azul</h1>
-                    <p class="slogan">Instrumentos Musicales</p>
-                </div>
-            </section>
+            <div class="row">
+                <section class="col-12 col-md-12 d-flex align-items-center justify-content-center">
+                    <div>
+                        <h1 class="marca">Cobra Azul</h1>
+                        <p class="slogan">Instrumentos Musicales</p>
+                    </div>
+                </section>
+            </div>
             
-        </div>
 
-        <!--Nav estilo nav-tabs de bootstrap-->
-        <nav>
-            <ul class="nav justify-content-center nav-tabs merri">
-                <li class="nav-item">
-                    <a class="nav-link inactivo naranjo"  href="../index.html">Home</a>
-                </li>
-                <li class=" nav-item">
-                    <a class="nav-link inactivo naranjo"   href="../pages/tienda.html">Tienda</a>
-                </li>
-                <li class=" nav-item ">
-                    <a class="nav-link active" aria-current="page" href="../pages/catalogo.html">Catálogo</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link inactivo naranjo" href="../pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-        <!--Fin nav-tabs-->
-    </header>
 
-    <main>
-        <!-- La introduccion al catalogo-->
-        <div class="catalogo-encabezado-flex">
-            <div class="catalogo-foto">
-                <img src="../assets/images/catalogo1.webp" alt="billete en guitarra acustica">
-                <img src="../assets/images/catalogo2.webp" alt="billete en guitarra acustica">
-            </div>
-            <div class="catalogo-titulo">
-                <h2>Catálogo 2025</h2>
-            </div>
-        </div>
+            <!--Nav estilo nav-tabs de bootstrap-->
+            <nav>
+                <ul class="nav justify-content-center nav-tabs merri">
+                    <li class="nav-item">
+                        <a class="nav-link inactivo naranjo"  href="../index.html">Home</a>
+                    </li>
+                    <li class=" nav-item">
+                        <a class="nav-link inactivo naranjo"   href="../pages/tienda.html">Tienda</a>
+                    </li>
+                    <li class=" nav-item ">
+                        <a class="nav-link active" aria-current="page" href="../pages/catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link inactivo naranjo" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--Fin nav-tabs-->
+        </header>
 
-        <!-- Las categorioas del catalogo (guitarras- , bajos , baterias , home studio , libros, merch)-->
-        <div class="categorias-grid">
+        <main class="container contenido-principal">
 
-            <div class="card" style="width: 18rem;">
-            <img src="../assets/catalogo/guitars.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Guitarras eléctricas</h5>
-                <p class="card-text">Conoce nuestras nuevas guitarras eléctricas de cuerpo solido y <semi-hueco class=""></semi-hueco></p>
-                <a href="#" class="btn btn-primary">Mirar catalogo</a>
+            <section class="contenedor-seccion">
+                <div>
+                    <h2 class="titulo-seccion">Catálogo 2025</h2>
+                </div>
+
+                <!-- <div>
+                    <img  class="img-fluid" src="../assets/catalogo/horizontal.webp" alt="guitarra roja horizontal">
+                </div> -->
+            </section>
+
+            <!--Aqui usare el grid-->
+            <div class="catalogo-grid">
+
+
+                <div class="item item-1">
+                    <article class="custom-card">
+                        <img src="../assets/catalogo/guitars.jpg">
+                        <p class="nombre-card">Colecciones exclusivas</p>
+                        <p class="descripcion-card">Autenticidad garantizada</p>
+                        <div>
+                            <a>Ver catalogo</a>
+                        </div>
+                    </article>
+
+                </div>
+
+
+                <div class="item item-2">
+                    <article class="custom-card">
+                        <img src="../assets/catalogo/percusiones.jpg">
+                        <p class="nombre-card">Percusiones electronicas</p>
+                        <p class="descripcion-card">Toca sin molestar a tus vecinos</p>
+                        <div>
+                            <a>Ver catalogo</a>
+                        </div>
+                    </article>
+
+                </div>
+
+
+
+                <div class="item item-3">
+                    <article class="custom-card">
+                        <img src="../assets/catalogo/atemporales.jpg">
+                        <p class="nombre-card">Clasicos del rock</p>
+                        <p class="descripcion-card">Guitarras atemporales</p>
+                        <div>
+                            <a>Ver catalogo</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="item item-3">
+                    <article class="custom-card">
+                        <img src="../assets/catalogo/bajos.jpg">
+                        <p class="nombre-card">Bajos modernos</p>
+                        <p class="descripcion-card">Configuraciones para todos los estilos</p>
+                        <div>
+                            <a>Ver catalogo</a>
+                        </div>
+                    </article>
+                </div>
+
+
+                <div class="item item-3">
+                    <article class="custom-card">
+                        <img src="../assets/catalogo/vivo.jpg">
+                        <p class="nombre-card">Equipo profesional</p>
+                        <p class="descripcion-card">Para presentaciones en vivo</p>
+                        <div>
+                            <a>Ver catalogo</a>
+                        </div>
+                    </article>
+                </div>
             </div>
-                
+            
             </div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </main>
-    
-    <!--Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-</body>
-</html>
+        </main>
+
+        <footer class="bg-dark text-white text-center py-4">
+            <div class="container">
+            <p class="mb-2">©2025 Cobra Audio</p>
+
+            <p class="mb-0">Siguenos:</p>
+            <p class="mb-2">
+                <a href="https://youtube.com" class="text-white mx-2">Youtube</a> 
+                <a href="https://instagram.com" class="text-white mx-2">Instagram</a>
+                <a href="https://facebook.com" class="text-white mx-2">Facebook</a> 
+            </p>
+            </div>
+        </footer>
+        
+        <!--Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    </body>
+    </html>
