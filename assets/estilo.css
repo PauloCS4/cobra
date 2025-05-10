@@ -60,6 +60,11 @@
     color: rgb(101, 145, 99);
 }
 
+/*Para separar el footer del formumario de contacto*/
+.espacio-blanco{
+
+    height: 50px;
+}
 
 /*Fuentes de gooogle*/
 

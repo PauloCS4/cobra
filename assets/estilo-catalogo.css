@@ -23,8 +23,6 @@
     flex-wrap: wrap;
     gap: 20px;
 
-    border: black solid 1px;
-
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
@@ -60,8 +58,7 @@
 }
 
 .item{
-    border: black solid 1px;
-    background-color: darkgrey  ;
+    background-color: darkgray;
     color: white;
 }
 
