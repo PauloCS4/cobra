@@ -1,0 +1,49 @@
+/* Estilos del catalogo*/
+
+/*Titulo de la sección usando flex*/
+.catalogo-encabezado-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.catalogo-foto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 530px;
+}
+.catalogo-foto img{
+    width: 42%;
+}
+
+.catalogo-titulo{
+    padding: 20px;
+    min-width: 270x;
+    text-align: center;
+}
+
+.categorias-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 250px 250px 250px;
+    gap: 25px;
+}
+
+.categorias-grid div{
+    border: black solid 1px;;
+    margin: 5px;
+}
+
+
+
+
+/*Partes del catalogo usando grid*/
