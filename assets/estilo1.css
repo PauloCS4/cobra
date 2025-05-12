@@ -64,14 +64,14 @@
     text-decoration: none;
 }
 
-.main-item{
+/* .main-item{
     border: black 1px solid;
 }
 
 .cajita{
     border: black 1px solid;
    
-}
+} */
 
 .flex-cont-tienda{
     margin: 40px;
@@ -85,7 +85,7 @@
 
 }
 .flex-item-tienda{
-    border: black 1px solid;
+    /* border: black 1px solid; */
  
 
     width: 480px;
