@@ -3,7 +3,6 @@
 } */
 
 
-
 .contenedor-seccion{
     display: flex;
     flex-direction: column;
@@ -100,8 +99,8 @@
 
 @media (min-width: 576px) {
     .img-logo {
-      width: 200px;
-      height: 200px;
+    width: 200px;
+    height: 200px;
     }
 }
 

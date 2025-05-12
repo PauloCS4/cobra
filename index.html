@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
 
     <!-- Estilo paulo-->
-     <link href="./assets/estilo.css" rel="stylesheet">
+     <link href="./assets/estilos.css" rel="stylesheet">
     
 </head>
 <body>
@@ -27,23 +27,22 @@
                     <p class="slogan">Instrumentos Musicales</p>
                 </div>
             </section>
-            
         </div>
 
         <!--Nav estilo nav-tabs de bootstrap-->
         <nav>
-            <ul class="nav justify-content-center nav-tabs merri">
+            <ul class="nav justify-content-center nav-tabs">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link inactivo naranjo" href="./pages/tienda.html">Tienda</a>
+                    <a class="nav-link inactivo" href="./pages/tienda.html">Tienda</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link inactivo naranjo" href="./pages/catalogo.html">Catálogo</a>
+                    <a class="nav-link inactivo" href="./pages/catalogo.html">Catálogo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link inactivo naranjo" href="./pages/contacto.html">Contacto</a>
+                    <a class="nav-link inactivo" href="./pages/contacto.html">Contacto</a>
                 </li>
             </ul>
         </nav>
@@ -55,58 +54,84 @@
 
             <div class="row">
 
-                <section class="col-md-6 section-presentacion">
+                <section class="col-12 ">
 
-                <div class="row">
-                    <div class="col-12   text-center my-4">
-                        <h2 class="display-3 fw-bold verde merri ">
-                            Bienvenido
-                        </h2>
+                    <div class="row">
+
+                        <div class="col-0 col-md-2">
+
+                        </div>
+
+                        <div class="col-12 col-md-8  my-3">
+                            <h2 class="display-3  main-titulo ">
+                                Bienvenido
+                            </h2>
+                        </div>
+
+                        <div class="col-0 col-md-2">
+
+                        </div>
+
                     </div>
-                </div>
 
+                    <div class="row">
 
+                        <div class="col-0 col-md-2">
 
-                <!-- <div class="col-12  text-center">
-                    <img class="img-fluid img-logo" alt="logotipo de la tienda" src="./assets/logos/cobra2.jpg">
-                </div> -->
+                        </div>
+                        <div class="col-12 col-md-8 text-center my-4">
+                            <p class="mx-auto">
+                                Desata tu pasión con nuestros instrumentos musicales hechos a mano, inspirados en los modelos clásicos que hicieron historia.
+                                Cada bajo y guitarra es una obra maestra, creada con precisión y pasión.
+                            </p>
+                        </div>
+                        <div class="col-0 col-md-2">
 
-                <div class="row">
-                    <div class="col-12 text-center my-4">
-                        <p class="mx-auto">
-                            Desata tu pasión con nuestros instrumentos musicales hechos a mano, inspirados en los modelos clásicos que hicieron historia.
-                            Cada bajo y guitarra es una obra maestra, creada con precisión y pasión.
-                        </p>
+                        </div>
+
                     </div>
-                </div>
-                <div class="row">
-                    <div class="my-4 ">
-                        <img class="img-fluid" src="./assets/images/estudio-casero.png" alt="Cliente probando guitarra">
+
+                    <div class="row">
+
+                        <div class="col-0 col-md-1">
+
+                        </div>
+
+                        <div class="col-12 col-md-10  my-4 ">
+                            <img class="img-fluid" src="./assets/images/estudio-casero.png" alt="Cliente probando guitarra">
+                        </div>
+
+                        <div class="col-0 col-md-1">
+
+                        </div>
                     </div>
-                </div>
             
                 </section>
 
-            <section class="col-md-6 section-promocional">
-
+            <!-- Distintos enlaces a contenidos de la pagina-->
+            <section class="">
 
                 <div class="row">
-                    <div class="text-center my-4">
-                        <a class="tema-secundario" href="#">
-                            <h3 class="display-3 fw-bold verde merri">
-                            Ofertas del mes
-                            </h3>
-                            <p class="text-muted">
-                                Las mejores oportunidades.
-                            </p> 
-                        </a>
+
+                    <div class="col-12 col-md-6 text-center my-4">
+
+                        <div class="cajita">
+                            <a class="enlaces-piola" href="#">
+                                <h3 class="display-3 fw-bold home-temas-tipo">
+                                Ofertas
+                                </h3>
+                                <p class="text-muted">
+                                    Las mejores oportunidades.
+                                </p> 
+                            </a>
+                        </div>
+
                     </div>
-                </div>
 
-                <div class="row">
-                    <div class="text-center my-4">
-                        <a class="tema-secundario" href="#">
-                            <h3 class="display-3 fw-bold verde merri">
+
+                    <div class=" col-12 col-md-6 text-center my-4">
+                        <a class="enlaces-piola" href="#">
+                            <h3 class="display-3 fw-bold home-temas-tipo">
                                 Home Studio
                             </h3>
                             <p class="text-muted">
@@ -114,12 +139,14 @@
                             </p> 
                         </a>
                     </div>
+
                 </div>
 
                 <div class="row">
-                    <div class="text-center my-4">
-                        <a class="tema-secundario" href="#">
-                            <h3 class="display-3 fw-bold verde merri">
+
+                    <div class="col-12 col-md-6 text-center my-4">
+                        <a class="enlaces-piola" href="#">
+                            <h3 class="display-3 fw-bold home-temas-tipo">
                                 Destacados
                             </h3>
                             <p class="text-muted">
@@ -127,12 +154,12 @@
                             </p>
                         </a>
                     </div>
-                </div>
 
-                <div class="row">
-                    <div class="text-center my-4">
-                        <a class="tema-secundario" href="#">
-                            <h3 class="display-3 fw-bold verde merri">
+
+
+                    <div class="col-12 col-md-6 text-center my-4">
+                        <a class="enlaces-piola" href="#">
+                            <h3 class="display-3 fw-bold home-temas-tipo">
                             Embajadores
                             </h3>
                             <p class="text-muted">
@@ -140,6 +167,7 @@
                             </p> 
                         </a>
                     </div>
+
                 </div>
 
             </section>
@@ -153,7 +181,7 @@
     
     <footer class="bg-dark text-white text-center py-4">
         <div class="container">
-          <p class="mb-2">©2025 Cobra Audio</p>
+          <p class="mb-2">Cobra Azul © 2025</p>
 
           <p class="mb-0">Siguenos:</p>
           <p class="mb-2">
