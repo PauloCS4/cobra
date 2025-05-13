@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .letra-normal, .temas-tipo, .main-titulo, .main-titulo-sin-bootstrap, .marca {
   font-style: normal;
   font-optical-sizing: auto;
@@ -129,8 +130,97 @@ iframe {
   text-align: center;
 }
 
-/*Aqui podria poner un ciclo*/
-/* c-item-1 c-item-2 c-item-3 c-item-4*/
+/*Formulario de contacto*/
+/*Para tener un formulario con tamaños escalando*/
+.c-item-1 {
+  width: 170px;
+}
+
+.c-item-2 {
+  width: 190px;
+}
+
+.c-item-3 {
+  width: 210px;
+}
+
+.c-item-4 {
+  width: 230px;
+}
+
+.c-item-5 {
+  width: 250px;
+}
+
+.c-item-6 {
+  width: 270px;
+}
+
+.c-item-7 {
+  width: 290px;
+}
+
+/* Home, color para los bordes del texto de las diferentes secciones. */
+.parrafo-1 {
+  margin: 0px 50px;
+  border-radius: 5px;
+  border: 1px solid rgb(25, 230, 50);
+}
+
+.parrafo-2 {
+  margin: 0px 50px;
+  border-radius: 5px;
+  border: 1px solid rgb(50, 205, 50);
+}
+
+.parrafo-3 {
+  margin: 0px 50px;
+  border-radius: 5px;
+  border: 1px solid rgb(75, 180, 50);
+}
+
+.parrafo-4 {
+  margin: 0px 50px;
+  border-radius: 5px;
+  border: 1px solid rgb(100, 155, 50);
+}
+
+.parrafo-5 {
+  margin: 0px 50px;
+  border-radius: 5px;
+  border: 1px solid rgb(125, 130, 50);
+}
+
+.parrafo-6 {
+  margin: 0px 50px;
+  border-radius: 5px;
+  border: 1px solid rgb(150, 105, 50);
+}
+
+.parrafo-7 {
+  margin: 0px 50px;
+  border-radius: 5px;
+  border: 1px solid rgb(175, 80, 50);
+}
+
+.parrafo-8 {
+  margin: 0px 50px;
+  border-radius: 5px;
+  border: 1px solid rgb(200, 55, 50);
+}
+
+.parrafo-9 {
+  margin: 0px 50px;
+  border-radius: 5px;
+  border: 1px solid rgb(225, 30, 50);
+}
+
+.parrafo-10 {
+  margin: 0px 50px;
+  border-radius: 5px;
+  border: 1px solid rgb(250, 5, 50);
+}
+
 .tarjeta {
   overflow: hidden;
 }

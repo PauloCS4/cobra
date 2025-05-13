@@ -1,14 +1,4 @@
-//Colores
-$color-marca: darkblue;
-$color-titulos: rgb(101, 145, 99);
-$color-fondo-card: rgb(34, 31, 31);
-$color-naranja: rgb(215, 153, 76);
-
-// Fuentes
-$fuente-marca: "Playwrite DK Loopet", cursive;
-$fuente-slogan: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-$fuente-titulo: "Merriweather", serif;
-$fuente-card: 'Courier New', Courier, monospace;
+@import 'variables';
 
 .letra-normal{
     font-style: normal;
@@ -147,8 +137,31 @@ iframe{
     text-align: center;
 }
 
-/*Aqui podria poner un ciclo*/
-/* c-item-1 c-item-2 c-item-3 c-item-4*/
+
+/*Formulario de contacto*/
+/*Para tener un formulario con tamaños escalando*/
+@for $i from 1 through 7 {
+  .c-item-#{$i} {
+    width: 150px + (20px * $i);
+  }
+}
+
+/* Home, color para los bordes del texto de las diferentes secciones. */
+
+@for $i from 1 through 10 {
+  .parrafo-#{$i} {
+
+    margin: 0px 50px;
+    border-radius: 5px;
+
+
+    border: 1px solid rgb($i * 25, 255 - ($i * 25), 50);
+ 
+
+
+    }
+}
+
 
 .tarjeta{
 
@@ -186,6 +199,8 @@ iframe{
     }
 }
 
+
+
 /* Para la grilla del catalogo en pantallas de computador*/
 
 @media (min-width: 850px) {
@@ -194,6 +209,9 @@ iframe{
         grid-template-rows: repeat(2, 1fr);
     }
 }
+
+
+
 
 
 
