@@ -1,0 +1,34 @@
+/* el color terciario es fusionable con el precio*/
+/* Ver si el fondo de las cards puede ser simplemente negro*/
+.fuente-normal, .marca {
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.marca {
+  font-family: "Playwrite DK Loopet", cursive;
+  font-weight: 450;
+  color: darkblue;
+}
+
+.slogan {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(31, 31, 31);
+}
+
+.boton-primario {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: black;
+}
+
+.boton-secundario {
+  padding: 5px;
+  border-radius: 3px;
+  background-color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

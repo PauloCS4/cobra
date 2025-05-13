@@ -1,0 +1,23 @@
+@import 'variables';
+@import 'header';
+
+
+body{
+    background-color: $color-fondo-card;
+}
+
+
+@mixin estilo-botones($padding,$radius,$bg){
+    padding: $padding;
+    border-radius: $radius;
+    background-color: $bg;
+}
+
+.boton-primario{
+    @include estilo-botones(10px, 5px , black );
+}
+
+.boton-secundario{
+    @include estilo-botones(5px, 3px, black);
+}
+
