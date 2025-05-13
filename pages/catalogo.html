@@ -14,7 +14,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
 
         <!-- Estilo css a mano-->
-        <link href="../assets/estilo1.css" rel="stylesheet">
+        <link href="../sass/estilo2.css" rel="stylesheet">
 
     </head>
     <body>
@@ -54,7 +54,7 @@
 
             <section class="contenedor-seccion">
                 <div>
-                    <h2 class="main-titulo main-separacion-titulo">Catálogo</h2>
+                    <h2 class="main-titulo-sin-bootstrap">Catálogo</h2>
                 </div>
 
                 <!-- <div>
@@ -63,17 +63,16 @@
             </section>
 
             <!--Aqui usare el grid-->
-            <div class="grilla-catalogo">
+            <div class="catalogo-grid">
 
-
-                <div class="item-catalogo item-1">
-                    <article class="catalogo-card">
+                <div class="catalogo-item c-item-1">
+                    <article class="tarjeta">
                         <img src="../assets/catalogo/guitars.jpg">
-                        <p class="nombre-card">Guitarras Eléctricas</p>
+                        <p class="titulo-card">Guitarras Eléctricas</p>
                         <p class="descripcion-card">Variedades atemporales</p>
-                        <div class="centrar-precio">
-                            <div class="item-precios">
-                                <a href="#">Precios</a>
+                        <div>   
+                            <div class="ver-precios">
+                                <a href="#">Ver precios</a>
                             </div>
                         </div>
                     </article>
@@ -81,14 +80,14 @@
                 </div>
 
 
-                <div class="item-catalogo item-2">
-                    <article class="catalogo-card">
+                <div class="catalogo-item c-item-2">
+                    <article class="tarjeta">
                         <img src="../assets/catalogo/percusiones.jpg">
-                        <p class="nombre-card">Baterias electrónicas</p>
+                        <p class="titulo-card">Baterias electrónicas</p>
                         <p class="descripcion-card">Practica donde quieras</p>
-                        <div class="centrar-precio">
-                            <div class="item-precios">
-                                <a href="#">Precios</a>
+                        <div>
+                            <div class="ver-precios">
+                                <a href="#">Ver precios</a>
                             </div>
                         </div>
                     </article>
@@ -97,39 +96,37 @@
 
 
 
-                <div class="item-catalogo item-3">
-                    <article class="catalogo-card">
+                <div class="catalogo-item c-item-3">
+                    <article class="tarjeta">
                         <img src="../assets/catalogo/atemporales.jpg">
-                        <p class="nombre-card">Instrumentos únicos</p>
+                        <p class="titulo-card">Instrumentos únicos</p>
                         <p class="descripcion-card">Modelos personalizados</p>
-                        <div class="centrar-precio">
-                            <div class="item-precios">
-                                <a href="#">Precios</a>
+                        <div>
+                            <div class="ver-precios">
+                                <a href="#">Ver precios</a>
                             </div>
                         </div>
                     </article>
                 </div>
 
-                <div class="item-catalogo item-3">
-                    <article class="catalogo-card">
+                <div class="catalogo-item c-item-4">
+                    <article class="tarjeta">
                         <img src="../assets/catalogo/bajos.jpg">
-                        <p class="nombre-card">Bajos eléctricos</p>
+                        <p class="titulo-card">Bajos eléctricos</p>
                         <p class="descripcion-card">Las ultimas novedades</p>
-                        <div class="centrar-precio">
-                            <div class="item-precios">
-                                <a href="#">Precios</a>
+                        <div>
+                            <div class="ver-precios">
+                                <a href="#">Ver precios</a>
                             </div>
                         </div>
                     </article>
                 </div>
-
-
                 
             </div>
             
+            <div class="espacio-blanco">
             </div>
 
-            <div class="espacio-blanco"></div>
         </main>
 
         <footer class="bg-dark text-white text-center py-4">

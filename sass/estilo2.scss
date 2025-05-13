@@ -1,0 +1,200 @@
+//Colores
+$color-marca: darkblue;
+$color-titulos: rgb(101, 145, 99);
+$color-fondo-card: rgb(34, 31, 31);
+$color-naranja: rgb(215, 153, 76);
+
+// Fuentes
+$fuente-marca: "Playwrite DK Loopet", cursive;
+$fuente-slogan: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$fuente-titulo: "Merriweather", serif;
+$fuente-card: 'Courier New', Courier, monospace;
+
+.letra-normal{
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+.marca{
+    font-family: $fuente-marca;
+    @extend .letra-normal;
+    font-weight: 450;
+    color: $color-marca;
+}
+
+.slogan{
+    font-family: $fuente-slogan;
+}
+
+nav .inactivo{
+    color: $color-naranja;
+}
+
+.main-titulo{
+    @extend .letra-normal;
+    font-family: $fuente-titulo;
+    font-weight: bold;
+    color: $color-titulos;
+    text-align: center;
+}
+
+/*  Capas se le podria sacar el prefijo main a todos estos*/ 
+/* En los titulos sin bootstrap se usara esto, en lugar de .main-titulo + .main-separador-titulo*/
+.main-titulo-sin-bootstrap{     
+    @extend .main-titulo;
+    font-size: 3rem;
+    margin: 30px 0px;
+}
+
+.main-frase{
+    text-align: center;
+    color: #6c757d;
+    margin: 30px 0 40px;
+}
+
+.imagen-principal{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.cont-imagen-home{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.img-home{
+    width: 100%;
+    max-width: 800px;
+}
+
+.temas-tipo{
+    @extend .letra-normal;
+    font-family: $fuente-titulo;
+    color: $color-titulos;
+}
+
+.enlaces-piola{
+    text-decoration: none;
+}
+
+.cont-flex-tienda{
+    margin: 40px;
+    gap: 20px;
+    /*Capas los contenedores flex comparten lo mmismo, ponerlo en un @extend*/
+    /* Las imagen-principal tambien comparte justify center y otros*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-flex-tienda{
+    width: 480px;
+    height: 360px;
+    overflow: hidden;
+    border-radius: 10px;    
+}
+
+.img-tienda{ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ubicacion-flex{
+    /*Este flex tiene atributos parametizables en un mixing*/
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: nowrap;
+    align-items: center;
+
+    margin: 20px;
+    padding: 20px;
+}
+
+.cont-mapa{
+    width: 80vw;
+    max-width: 700px;
+    min-width: 350px;
+    aspect-ratio: 4 / 3;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.catalogo-grid{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.catalogo-item{
+    background-color: $color-fondo-card;
+    color: white;
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+/*Aqui podria poner un ciclo*/
+/* c-item-1 c-item-2 c-item-3 c-item-4*/
+
+.tarjeta{
+
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .titulo-card{
+        font-family: $fuente-card;
+        font-size: large;
+    }
+
+    .descripcion-card {
+        font-size: small;
+    }
+}
+
+.ver-precios{
+    background-color: $color-naranja;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 60%;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+/* Para la grilla del catalogo en pantallas de computador*/
+
+@media (min-width: 850px) {
+    .catalogo-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+
+
+
