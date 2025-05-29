@@ -6,12 +6,22 @@
 
 .marca {
   font-family: "Playwrite DK Loopet", cursive;
-  font-weight: 450;
+  font-weight: 600;
   color: darkblue;
+  font-size: 40px;
 }
 
 .slogan {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
+  opacity: 1;
+  color: rgb(90, 32, 32);
+  animation: aparecer 5s linear;
+
+}
+
+@keyframes aparecer {
+  0% {opacity: 0; color: #6c757d;}
+  100%{opacity: 1; color: rgb(90,32,32);} 
 }
 
 nav .inactivo {
