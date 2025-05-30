@@ -1,0 +1,36 @@
+.imagen-principal , .cont-imagen-home{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.img-home{
+    width: 100%;
+    max-width: 800px;
+}
+
+
+//home
+.temas-tipo {
+    @extend .letra-normal;
+  font-family: $font-titulo;
+  color: $color-titulos;
+  transition: color 1.5s ease;
+}
+
+.temas-tipo:hover{
+  color: brown;
+}
+
+.enlaces-piola {
+  text-decoration: none;
+}
+
+//Bordes de color de las secciones del index
+@for $i from 1 through 10 {
+  .parrafo-#{$i} {
+    margin: 0px 50px;
+    border-radius: 5px;
+    border: 1px solid rgb($i * 25, 255 - ($i * 25), 50);
+    }
+}

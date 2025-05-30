@@ -1,0 +1,21 @@
+//main
+
+.main-titulo{
+    @extend .letra-normal;
+    font-family: $font-titulo;
+    font-weight: bold;
+    color: $color-titulos;
+    text-align: center;
+}
+
+.main-titulo-sin-bootstrap{     
+    @extend .main-titulo;
+    font-size: 3rem;
+    margin: 30px 0px;
+}
+
+.main-frase{
+    text-align: center;
+    color: $color-inicio;
+    margin: 30px 0 40px;
+}

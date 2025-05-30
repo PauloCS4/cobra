@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .letra-normal, .temas-tipo, .main-titulo, .main-titulo-sin-bootstrap, .marca {
   font-style: normal;
   font-optical-sizing: auto;
@@ -12,20 +11,22 @@
 }
 
 .slogan {
-  font-family: 'Courier New', Courier, monospace;
-  opacity: 1;
+  font-family: "Courier New", Courier, monospace;
   color: rgb(15, 7, 7);
-  animation: aparecer 2s linear;
   font-weight: 700;
-
-
+  animation: aparecer 2s linear;
 }
 
 @keyframes aparecer {
-  0% {opacity: 0; color: #6c757d;}
-  100%{opacity: 1; color: rgb(15, 7, 7);} 
+  0% {
+    opacity: 0;
+    color: #6c757d;
+  }
+  100% {
+    opacity: 1;
+    color: rgb(15, 7, 7);
+  }
 }
-
 nav .inactivo {
   color: rgb(141, 99, 49);
 }
@@ -37,8 +38,6 @@ nav .inactivo {
   text-align: center;
 }
 
-/*  Capas se le podria sacar el prefijo main a todos estos*/
-/* En los titulos sin bootstrap se usara esto, en lugar de .main-titulo + .main-separador-titulo*/
 .main-titulo-sin-bootstrap {
   font-size: 3rem;
   margin: 30px 0px;
@@ -50,13 +49,7 @@ nav .inactivo {
   margin: 30px 0 40px;
 }
 
-.imagen-principal {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.cont-imagen-home {
+.imagen-principal, .cont-imagen-home {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -70,11 +63,10 @@ nav .inactivo {
 .temas-tipo {
   font-family: "Merriweather", serif;
   color: rgb(101, 145, 99);
-
   transition: color 1.5s ease;
 }
 
-.temas-tipo:hover{
+.temas-tipo:hover {
   color: brown;
 }
 
@@ -82,103 +74,6 @@ nav .inactivo {
   text-decoration: none;
 }
 
-.cont-flex-tienda {
-  margin: 40px;
-  gap: 20px;
-  /*Capas los contenedores flex comparten lo mmismo, ponerlo en un @extend*/
-  /* Las imagen-principal tambien comparte justify center y otros*/
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.item-flex-tienda {
-  width: 480px;
-  height: 360px;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.img-tienda {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.ubicacion-flex {
-  /*Este flex tiene atributos parametizables en un mixing*/
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  margin: 20px;
-  padding: 20px;
-}
-
-.cont-mapa {
-  width: 80vw;
-  max-width: 700px;
-  min-width: 350px;
-  aspect-ratio: 4/3;
-}
-
-iframe {
-  width: 100%;
-  height: 100%;
-}
-
-.catalogo-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  margin-bottom: 20px;
-  gap: 20px;
-}
-
-.catalogo-item {
-  background-color: rgb(34, 31, 31);
-  color: white;
-  width: 400px;
-  border-radius: 10px;
-  overflow: hidden;
-  text-align: center;
-}
-
-/*Formulario de contacto*/
-/*Para tener un formulario con tamaños escalando*/
-.c-item-1 {
-  width: 170px;
-}
-
-.c-item-2 {
-  width: 190px;
-}
-
-.c-item-3 {
-  width: 210px;
-}
-
-.c-item-4 {
-  width: 230px;
-}
-
-.c-item-5 {
-  width: 250px;
-}
-
-.c-item-6 {
-  width: 270px;
-}
-
-.c-item-7 {
-  width: 290px;
-}
-
-/* Home, color para los bordes del texto de las diferentes secciones. */
 .parrafo-1 {
   margin: 0px 50px;
   border-radius: 5px;
@@ -239,6 +134,69 @@ iframe {
   border: 1px solid rgb(250, 5, 50);
 }
 
+.cont-flex-tienda {
+  margin: 40px;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-flex-tienda {
+  width: 480px;
+  height: 360px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.img-tienda {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ubicacion-flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.cont-mapa {
+  width: 80vw;
+  max-width: 700px;
+  min-width: 350px;
+  aspect-ratio: 4/3;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.catalogo-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.catalogo-item {
+  background-color: rgb(34, 31, 31);
+  color: white;
+  width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
 .tarjeta {
   overflow: hidden;
 }
@@ -270,34 +228,70 @@ iframe {
   color: black;
 }
 
-/* Para la grilla del catalogo en pantallas de computador*/
 @media (min-width: 850px) {
   .catalogo-grid {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
   }
 }
+.c-item-1 {
+  width: 170px;
+}
 
+.c-item-2 {
+  width: 190px;
+}
 
-.botoncito{
+.c-item-3 {
+  width: 210px;
+}
+
+.c-item-4 {
+  width: 230px;
+}
+
+.c-item-5 {
+  width: 250px;
+}
+
+.c-item-6 {
+  width: 270px;
+}
+
+.c-item-7 {
+  width: 290px;
+}
+
+.botoncito {
   width: 200px;
   background-color: green;
-  animation: tornasol 4s linear infinite , moverse 4s linear infinite;
+  animation: tornasol 4s linear infinite, moverse 4s linear infinite;
 }
 
-@keyframes tornasol{
-  0% {background-color: green;}
-  25% {background-color: blue;}
-  50% {background-color: red;}
-  75% {background-color: purple;}
-  100%{background-color: brown;}
+@keyframes tornasol {
+  0% {
+    background-color: green;
+  }
+  25% {
+    background-color: blue;
+  }
+  50% {
+    background-color: red;
+  }
+  75% {
+    background-color: purple;
+  }
+  100% {
+    background-color: brown;
+  }
 }
-
 @keyframes moverse {
-  0% { transform: translateX(0) translateY(0) translateZ(0);}
-  50% { transform: translateX(40px) translateY(0) translateZ(0);}
-  
-
+  0% {
+    transform: translateX(0) translateY(0) translateZ(0);
+  }
+  50% {
+    transform: translateX(40px) translateY(0) translateZ(0);
+  }
 }
 
-/*# sourceMappingURL=estilo2.css.map */
+/*# sourceMappingURL=estilo3.css.map */
