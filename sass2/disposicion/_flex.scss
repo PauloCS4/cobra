@@ -1,0 +1,21 @@
+.cont-flex-tienda, .imagen-principal, .cont-imagen-home {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.item-flex-tienda {
+  width: 480px;
+  height: 360px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.ubicacion-flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+}

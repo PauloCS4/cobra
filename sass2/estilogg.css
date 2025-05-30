@@ -1,0 +1,137 @@
+.letra-normal, .temas-tipo, .main-titulo, .main-titulo-sin-bootstrap, .marca {
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+
+.marca {
+  font-family: "Playwrite DK Loopet", cursive;
+  font-weight: 600;
+  color: blue;
+  font-size: 40px;
+}
+
+.slogan {
+  font-family: "Courier New", Courier, monospace;
+  opacity: 1;
+  color: rgb(15, 7, 7);
+  animation: aparecer 2s linear;
+  font-weight: 700;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    color: #6c757d;
+  }
+  100% {
+    opacity: 1;
+    color: rgb(15, 7, 7);
+  }
+}
+@keyframes tornasol {
+  0% {
+    background-color: green;
+  }
+  25% {
+    background-color: blue;
+  }
+  50% {
+    background-color: red;
+  }
+  75% {
+    background-color: purple;
+  }
+  100% {
+    background-color: brown;
+  }
+}
+@keyframes moverse {
+  0% {
+    transform: translateX(0) translateY(0) translateZ(0);
+  }
+  50% {
+    transform: translateX(40px) translateY(0) translateZ(0);
+  }
+}
+.catalogo-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+@media (min-width: 850px) {
+  .catalogo-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+.cont-flex-tienda, .imagen-principal, .cont-imagen-home {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.item-flex-tienda {
+  width: 480px;
+  height: 360px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.ubicacion-flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.botoncito {
+  width: 200px;
+  background-color: green;
+  animation: tornasol 4s linear infinite, moverse 4s linear infinite;
+}
+
+.ver-precios {
+  background-color: rgb(215, 153, 76);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 60%;
+}
+
+.ver-precios a {
+  text-decoration: none;
+  color: black;
+}
+
+.tarjeta {
+  overflow: hidden;
+}
+
+.tarjeta img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.tarjeta div {
+  display: flex;
+  justify-content: center;
+}
+
+.tarjeta .titulo-card {
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+}
+
+.tarjeta .descripcion-card {
+  font-size: small;
+}
+
+/*# sourceMappingURL=estilogg.css.map */
