@@ -7,6 +7,7 @@
 
 .marca{
     @extend .letra-normal;
+    font-family: $fuente-marca;
     font-weight: 600;
     color:$color-cobra ;
     font-size: 40px;
