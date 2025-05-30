@@ -6,12 +6,24 @@
 
 .marca {
   font-family: "Playwrite DK Loopet", cursive;
-  font-weight: 450;
+  font-weight: 600;
   color: darkblue;
+  font-size: 40px;
 }
 
 .slogan {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
+  opacity: 1;
+  color: rgb(15, 7, 7);
+  animation: aparecer 2s linear;
+  font-weight: 700;
+
+
+}
+
+@keyframes aparecer {
+  0% {opacity: 0; color: #6c757d;}
+  100%{opacity: 1; color: rgb(15, 7, 7);} 
 }
 
 nav .inactivo {
@@ -58,6 +70,12 @@ nav .inactivo {
 .temas-tipo {
   font-family: "Merriweather", serif;
   color: rgb(101, 145, 99);
+
+  transition: color 1.5s ease;
+}
+
+.temas-tipo:hover{
+  color: brown;
 }
 
 .enlaces-piola {

@@ -14,14 +14,16 @@
 .slogan {
   font-family: 'Courier New', Courier, monospace;
   opacity: 1;
-  color: rgb(90, 32, 32);
-  animation: aparecer 5s linear;
+  color: rgb(15, 7, 7);
+  animation: aparecer 2s linear;
+  font-weight: 700;
+
 
 }
 
 @keyframes aparecer {
   0% {opacity: 0; color: #6c757d;}
-  100%{opacity: 1; color: rgb(90,32,32);} 
+  100%{opacity: 1; color: rgb(15, 7, 7);} 
 }
 
 nav .inactivo {
@@ -68,6 +70,12 @@ nav .inactivo {
 .temas-tipo {
   font-family: "Merriweather", serif;
   color: rgb(101, 145, 99);
+
+  transition: color 1.5s ease;
+}
+
+.temas-tipo:hover{
+  color: brown;
 }
 
 .enlaces-piola {
