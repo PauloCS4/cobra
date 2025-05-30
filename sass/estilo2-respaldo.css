@@ -278,26 +278,4 @@ iframe {
   }
 }
 
-
-.botoncito{
-  width: 200px;
-  background-color: green;
-  animation: tornasol 4s linear infinite , moverse 4s linear infinite;
-}
-
-@keyframes tornasol{
-  0% {background-color: green;}
-  25% {background-color: blue;}
-  50% {background-color: red;}
-  75% {background-color: purple;}
-  100%{background-color: brown;}
-}
-
-@keyframes moverse {
-  0% { transform: translateX(0) translateY(0) translateZ(0);}
-  50% { transform: translateX(40px) translateY(0) translateZ(0);}
-  
-
-}
-
 /*# sourceMappingURL=estilo2.css.map */

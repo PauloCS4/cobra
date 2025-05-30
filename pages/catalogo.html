@@ -13,6 +13,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
 
+        <!-- CDN AOS-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <!-- CDN animate.css-->
+        <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
         <!-- Estilo css a mano-->
         <link href="../sass/estilo2.css" rel="stylesheet">
 
@@ -23,7 +31,7 @@
             <div class="row">
                 <section class="col-12 col-md-12 d-flex align-items-center justify-content-center">
                     <div>
-                        <h1 class="marca">Cobra Azul</h1>
+                        <h1 class="marca animate__animated animate__flipInX">Cobra Azul</h1>
                         <p class="slogan">Instrumentos Musicales</p>
                     </div>
                 </section>
@@ -40,7 +48,7 @@
                         <a class="nav-link inactivo naranjo"   href="../pages/tienda.html">Tienda</a>
                     </li>
                     <li class=" nav-item ">
-                        <a class="nav-link active" aria-current="page" href="../pages/catalogo.html">Catálogo</a>
+                        <a class="nav-link active animate__bounce animate__animated" aria-current="page" href="../pages/catalogo.html">Catálogo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link inactivo naranjo" href="../pages/contacto.html">Contacto</a>
@@ -65,7 +73,7 @@
             <!--catalogo-grid  version-formal-->
             <div class="catalogo-grid">
 
-                <div class="catalogo-item">
+                <div class="catalogo-item" data-aos="flip-left">
                     <article class="tarjeta">
                         <img src="../assets/catalogo/guitars.jpg">
                         <p class="titulo-card">Guitarras Eléctricas</p>
@@ -80,7 +88,7 @@
                 </div>
 
 
-                <div class="catalogo-item ">
+                <div class="catalogo-item " data-aos="flip-left">
                     <article class="tarjeta">
                         <img src="../assets/catalogo/percusiones.jpg">
                         <p class="titulo-card">Baterias electrónicas</p>
@@ -96,7 +104,7 @@
 
 
 
-                <div class="catalogo-item">
+                <div class="catalogo-item" data-aos="flip-left">
                     <article class="tarjeta">
                         <img src="../assets/catalogo/atemporales.jpg">
                         <p class="titulo-card">Instrumentos únicos</p>
@@ -109,7 +117,7 @@
                     </article>
                 </div>
 
-                <div class="catalogo-item">
+                <div class="catalogo-item" data-aos="flip-left">
                     <article class="tarjeta">
                         <img src="../assets/catalogo/bajos.jpg">
                         <p class="titulo-card">Bajos eléctricos</p>
@@ -132,7 +140,7 @@
 
         <footer class="bg-dark text-white text-center py-4">
             <div class="container">
-            <p class="mb-2">©2025 Cobra Audio</p>
+            <p class="mb-2">Cobra Azul © 2025</p>
 
             <p class="mb-0">Siguenos:</p>
             <p class="mb-2">
@@ -145,5 +153,10 @@
         
         <!--Bootstrap-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+        <!--AOS-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
     </html>
