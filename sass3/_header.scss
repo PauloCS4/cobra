@@ -1,0 +1,29 @@
+//header
+
+.letra-normal{
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+.marca{
+    @extend .letra-normal;
+    font-weight: 600;
+    color:$color-cobra ;
+    font-size: 40px;
+}
+
+.slogan{
+    font-family: $fuente-courier;
+    color: $color-slogan;
+    font-weight: 700;
+    animation: aparecer 2s linear;
+}
+
+@keyframes aparecer {
+  0% {opacity: 0; color: $color-inicio}
+  100%{opacity: 1; color: $color-slogan;} 
+}
+
+nav .inactivo{
+    color: $color-inactivo;
+}

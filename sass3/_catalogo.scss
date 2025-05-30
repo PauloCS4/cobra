@@ -1,0 +1,65 @@
+//catalogo
+
+.catalogo-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.catalogo-item {
+  background-color: $fondo-card;
+  color: white;
+  width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.tarjeta{
+
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .titulo-card{
+        font-family: $fuente-courier;
+        font-size: large;
+    }
+
+    .descripcion-card {
+        font-size: small;
+    }
+}
+
+.ver-precios{
+    background-color: $color-naranja;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 60%;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+//Grilla del catalogo pantallas medianas-grandes.
+@media (min-width: 850px) {
+    .catalogo-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
